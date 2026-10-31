@@ -1,0 +1,5 @@
+t08 - the webapp-to-guacd boundary, diagnosed
+Symptom: webapp logs 'Creation of WebSocket tunnel to guacd failed: Connection to guacd timed out.' while guacd's own log shows no connection attempt.
+Native (Python) client to 127.0.0.1:4822: instant 'args' reply; guacd logs 'Creating new client for protocol "ssh"'.
+Java test client to 127.0.0.1:4822 (and :18222, :18103): TCP 'connects' but local address is the sandbox fabric address [fd8b:4f84:7d32:99::2] and every read times out - the sandbox routes the JVM's dual-stack (IPv4-mapped IPv6) connects into its fabric, where loopback services do not exist.
+Fix: run the JVM with -Djava.net.preferIPv4Stack=true. Same Java test then shows local=/127.0.0.1 and reads guacd's args reply verbatim.

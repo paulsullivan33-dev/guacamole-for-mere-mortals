@@ -1,0 +1,25 @@
+t00 - downloads and checksum verification
+Date: Sat Oct 31 00:33:32 UTC 2026
+
+GET https://downloads.apache.org/guacamole/1.6.0/binary/guacamole-1.6.0.war
+  ok: guacamole-1.6.0.war 15641879 bytes
+GET https://downloads.apache.org/guacamole/1.6.0/binary/guacamole-1.6.0.war.sha256
+  ok: guacamole-1.6.0.war.sha256 86 bytes
+GET https://downloads.apache.org/guacamole/1.6.0/source/guacamole-server-1.6.0.tar.gz
+  ok: guacamole-server-1.6.0.tar.gz 1252749 bytes
+GET https://downloads.apache.org/guacamole/1.6.0/source/guacamole-server-1.6.0.tar.gz.sha256
+  ok: guacamole-server-1.6.0.tar.gz.sha256 96 bytes
+Published checksums:
+b41ceb1e2df010b54db563e0b00edb8d5fe9f073c6168462e4c978df0fc6e716  guacamole-1.6.0.war
+8bc45675da96d7b6f39728160181e3d4ff3c08f460f6d26de5805b642bf13f2b  guacamole-server-1.6.0.tar.gz
+
+Verification:
+guacamole-1.6.0.war: OK
+guacamole-server-1.6.0.tar.gz: OK
+
+guacamole-1.6.0.war: Java archive data (JAR)
+guacamole-server-1.6.0/
+guacamole-server-1.6.0/configure
+guacamole-server-1.6.0/Makefile.am
+guacamole-server-1.6.0/NOTICE
+guacamole-server-1.6.0/LICENSE

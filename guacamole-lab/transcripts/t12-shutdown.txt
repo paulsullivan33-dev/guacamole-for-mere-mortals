@@ -1,0 +1,6 @@
+t12 - shutdown and cleanup
+Tomcat (PID from ps, started by this lab) stopped; fixture sshd stopped via its own pid file;
+guacd, x11vnc, xclock and the lab Xvfb (:99) stopped - each matched by its lab path, nobody else's processes touched.
+ss -tln afterwards: no listeners on 18103, 4822, 18222 or 5901 - ALL LAB PORTS FREE.
+Fixture OS user 'labguest' removed (userdel -r); 'id labguest' -> no such user.
+The entire labwork tree (Tomcat, extracted .deb trees, build tree, recordings, downloads) is deleted after the guide is written; transcripts and redacted configs remain in guacamole-lab/.

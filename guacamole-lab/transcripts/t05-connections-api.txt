@@ -1,0 +1,19 @@
+t05 - session data via API (user-mapping parsed)
+{
+    "Lab SSH shell": {
+        "name": "Lab SSH shell",
+        "identifier": "Lab SSH shell",
+        "parentIdentifier": "ROOT",
+        "protocol": "ssh",
+        "attributes": {},
+        "activeConnections": 0
+    },
+    "Lab VNC desktop": {
+        "name": "Lab VNC desktop",
+        "identifier": "Lab VNC desktop",
+        "parentIdentifier": "ROOT",
+        "protocol": "vnc",
+        "attributes": {},
+        "activeConnections": 0
+    }
+}

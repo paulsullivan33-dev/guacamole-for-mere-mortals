@@ -1,0 +1,17 @@
+t01 - Tomcat start and Guacamole login page
+Tomcat: Server version: Apache Tomcat/10.1.55 (Ubuntu)
+JVM Version:    21.0.12.1+1-1-24.04.4-Ubuntu
+Tomcat started.
+31-Oct-2026 00:35:28.063 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-18103"]
+31-Oct-2026 00:35:28.339 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [4073] milliseconds
+31-Oct-2026 00:35:29.345 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+31-Oct-2026 00:35:29.439 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.55 (Ubuntu)]
+31-Oct-2026 00:35:30.527 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [/home/hatch/workspace/guacamole-labwork/tomcat/webapps/guacamole.war]
+GET /guacamole/ -> HTTP 404, 692 bytes
+<title>HTTP Status 404 – Not Found</title>
+
+Failure with Tomcat 10 (verbatim from tomcat/logs/localhost log):
+		at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:342)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.lang.ClassNotFoundException: javax.servlet.ServletContextListener
+Root cause: Guacamole 1.6.0 webapp classes reference javax.servlet (checked with grep/strings on GuacamoleServletContextListener.class); Tomcat 10 provides only jakarta.servlet. Switching to Tomcat 9.

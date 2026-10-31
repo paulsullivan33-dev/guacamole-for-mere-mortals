@@ -1,0 +1,4 @@
+t02 - Tomcat 9 acquisition
+Ubuntu 24.04 packages Tomcat 10 only (apt-cache policy tomcat9: no candidate).
+Downloaded apache-tomcat-9.0.99.tar.gz from archive.apache.org (official Apache archive).
+apache-tomcat-9.0.99.tar.gz: OK

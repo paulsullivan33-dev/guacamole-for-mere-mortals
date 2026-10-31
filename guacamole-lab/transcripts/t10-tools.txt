@@ -1,0 +1,16 @@
+t10 - installed tools and versions
+Guacamole proxy daemon (guacd) version 1.6.0
+
+Protocol plugin libraries installed:
+libguac-client-rdp.so
+libguac-client-ssh.so
+libguac-client-telnet.so
+libguac-client-vnc.so
+
+guacenc usage (first lines):
+/home/hatch/workspace/guacamole-labwork/guacd-install/bin/guacenc: invalid option -- 'h'
+USAGE: /home/hatch/workspace/guacamole-labwork/guacd-install/bin/guacenc [-s WIDTHxHEIGHT] [-r BITRATE] [-f] [FILE]...
+
+guaclog usage (first lines):
+/home/hatch/workspace/guacamole-labwork/guacd-install/bin/guaclog: invalid option -- 'h'
+USAGE: /home/hatch/workspace/guacamole-labwork/guacd-install/bin/guaclog [-f] [FILE]...

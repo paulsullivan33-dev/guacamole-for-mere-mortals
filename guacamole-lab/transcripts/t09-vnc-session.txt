@@ -1,0 +1,10 @@
+REST login OK (token value not printed)
+websocket handshake: HTTP/1.1 101 
+  [frame 43 bytes]
+  [frame 581 bytes]
+  [frame 172 bytes]
+  [frame 6701 bytes]
+  [frame 281 bytes]
+  [frame 73 bytes]
+instruction counts: {'': 1, 'blob': 6, 'cfill': 10, 'copy': 6, 'cursor': 3, 'end': 6, 'img': 6, 'rect': 10, 'size': 3, 'sync': 5}
+frames (sync): 5, blobs: 6, elapsed: 10.0s, typed: False

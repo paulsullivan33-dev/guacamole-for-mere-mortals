@@ -1,0 +1,7 @@
+t11 - session recording and guacenc
+A raw-protocol SSH session was driven with recording-path set (recording-name lab-ssh-session, create-recording-path true).
+The recording file written by guacd: 12,133 bytes of Guacamole protocol instructions.
+First guacenc attempt refused: 'Refusing to encode in-progress recording' (the abrupt disconnect left no finish marker) - rerun with -f.
+guacenc: INFO: Encoding "recordings/lab-ssh-session" to "recordings/lab-ssh-session.m4v" ...
+guacenc: INFO: All files encoded successfully.
+ffprobe of the result: codec_name=mpeg4, width=1024, height=768, duration=10.04 s, 649,554 bytes.

@@ -1,0 +1,13 @@
+t04 - REST API login (POST /api/tokens)
+Wrong password first:
+{"message":"Permission Denied.","translatableMessage":{"key":"APP.TEXT_UNTRANSLATED","variables":{"MESSAGE":"Permission Denied."}},"statusCode":null,"expected":[{"name":"username","type":"USERNAME"},{"name":"password","type":"PASSWORD"}],"patches":null,"type":"INVALID_CREDENTIALS"}
+-> HTTP 403
+Correct lab credentials:
+{
+ "authToken": "95030EBA...[redacted]",
+ "username": "labreader",
+ "dataSource": "default",
+ "availableDataSources": [
+  "default"
+ ]
+}

@@ -1,0 +1,30 @@
+REST login OK (token value not printed)
+websocket handshake: HTTP/1.1 101 
+  [frame 43 bytes]
+  [frame 450 bytes]
+  [frame 656 bytes]
+  [frame 7194 bytes]
+  [frame 4593 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+sent keystrokes: 'echo GUAC-LAB-MARKER-$((6*7))' + Enter
+  [frame 8192 bytes]
+  [frame 1481 bytes]
+  [frame 31 bytes]
+  [frame 4593 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+  [frame 21 bytes]
+instruction counts: {'': 1, 'argv': 3, 'blob': 8, 'cfill': 10, 'cursor': 1, 'end': 9, 'img': 6, 'move': 4, 'rect': 10, 'size': 7, 'sync': 21}
+frames (sync): 21, blobs: 8, elapsed: 16.6s, typed: True

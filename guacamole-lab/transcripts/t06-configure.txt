@@ -1,0 +1,42 @@
+t06 - guacamole-server configure summary (1.6.0, from source tarball, sha256 verified in t00)
+Distribution -dev packages downloaded as .debs only (apt-get --download-only), extracted to a local tree; nothing installed system-wide.
+27 dangling library symlinks in the extracted tree (runtime libs already present on the host) were repointed at the host copies before configure would link.
+FreeRDP note: configure at first refused Ubuntu's FreeRDP 2.11.5 as a 'development version' (its FreeRDPConvertColor check fails) and demanded --enable-allow-freerdp-snapshots; configure was rerun with that flag.
+   Library status:
+
+     freerdp ............. yes (2.x)
+     pango ............... yes
+     libavcodec .......... yes
+     libavformat ......... yes
+     libavutil ........... yes
+     libssh2 ............. yes
+     libssl .............. yes
+     libswscale .......... yes
+     libtelnet ........... yes
+     libVNCServer ........ yes
+     libvorbis ........... yes
+     libpulse ............ yes
+     libwebsockets ....... no
+     libwebp ............. yes
+     wsock32 ............. no
+
+   Protocol support:
+
+      Kubernetes .... no
+      RDP ........... yes
+      SSH ........... yes
+      Telnet ........ yes
+      VNC ........... yes
+
+   Services / tools:
+
+      guacd ...... yes
+      guacenc .... yes
+      guaclog .... yes
+
+   FreeRDP plugins: /usr/lib/x86_64-linux-gnu/freerdp2
+   Init scripts: no
+   Systemd units: no
+
+Type "make" to compile guacamole-server.
+

@@ -1,0 +1,17 @@
+<user-mapping>
+    <authorize username="labreader" password="[md5 hash of the lab password]" encoding="md5">
+        <connection name="Lab SSH shell">
+            <protocol>ssh</protocol>
+            <param name="hostname">127.0.0.1</param>
+            <param name="port">18222</param>
+            <param name="username">labguest</param>
+            <param name="password">[fixture password]</param>
+        </connection>
+        <connection name="Lab VNC desktop">
+            <protocol>vnc</protocol>
+            <param name="hostname">127.0.0.1</param>
+            <param name="port">5901</param>
+            <param name="password">[fixture password]</param>
+        </connection>
+    </authorize>
+</user-mapping>
